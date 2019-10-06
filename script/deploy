@@ -1,13 +1,13 @@
 #!/bin/sh
-ssh ubuntu@52.79.157.76 <<EOF
-    pwd
-    find / -name node-app
-    cd ~/node-app
-    git pull origin master
-    npm install
-    pm2 restart all
-exit
-EOF
+# ssh ubuntu@52.79.157.76 <<EOF
+pwd
+find / -name vue-admin
+cd ~/workspace/vue-admin
+git pull origin master
+npm install
+pm2 restart all
+#   exit
+# EOF
 
 # 52.79.157.76:8080/job/vue-admin/build?token=vue-admin&cause=hellohazel
 # http://hazel:m3QWRrxBZWCWNh8v@52.79.157.76:8080/job/vue-admin/build?token=m3QWRrxBZWCWNh8v&cause=hellohazel
